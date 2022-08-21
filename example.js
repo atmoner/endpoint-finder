@@ -1,8 +1,8 @@
-import lcdFinder from './src/index.js'
+import endpointFinder from './src/index.js'
  
-let lcd = new lcdFinder('osmosis')
+let getChainEndpoint = new endpointFinder('osmosis')
 
-lcd.getLcd().then(function(result) {
+getChainEndpoint.getLcd().then(function(result) {
   console.log(result)
 })
  

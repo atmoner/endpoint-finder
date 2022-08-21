@@ -1,7 +1,7 @@
 import { chains } from 'chain-registry';
 import fetch from 'node-fetch';
 
-let lcdFinder = class {
+let endpointFinder = class {
 
   constructor(chainToFind) {
     this.chainToFind = chainToFind
@@ -11,9 +11,9 @@ let lcdFinder = class {
   async getLcd() {
     let finder = chains.find(
       ({chain_name}) => chain_name === this.chainToFind
-    )
- 
-    if(typeof finder !== 'undefined' && typeof finder.apis !== 'undefined') {      
+    ) 
+    
+    if (typeof finder !== 'undefined' && typeof finder.apis !== 'undefined') {      
       for (const lcds of finder.apis.rest) {      
         try {
           const response = await fetch(lcds.address + '/node_info')
@@ -26,9 +26,8 @@ let lcdFinder = class {
         }        
       }      
     }
-
     return this.finalLcd
   }      
 }
-export default lcdFinder
+export default endpointFinder
  
