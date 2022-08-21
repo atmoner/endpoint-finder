@@ -1,5 +1,5 @@
-import { chains } from 'chain-registry';
-import fetch from 'node-fetch';
+import { chains } from 'chain-registry'
+import fetch from 'node-fetch'
 
 let endpointFinder = class {
 
