@@ -2,7 +2,7 @@
 
 <img width="300" alt="cosmos" src="https://user-images.githubusercontent.com/1071490/185792789-ed005cb5-bc78-481f-8993-07b647ebbe13.png">
 
-
+![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/node.js.yml/badge.svg)
 ![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/jest.yml/badge.svg)
 ![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/codacy.yml/badge.svg)
 
