@@ -27,8 +27,10 @@ npm i endpoint-finder
 
 ## Usage:
 
+Get LCD:
+
 ``` js
-import endpointFinder from './src/index.js'
+import endpointFinder from 'endpoint-finder'
  
 let getChainEndpoint = new endpointFinder('bitcanna')
 
@@ -39,6 +41,21 @@ getChainEndpoint.getLcd().then(function(result) {
 
 Return:
 `https://lcd.bitcanna.io`
+
+Get RPC:
+
+``` js
+import endpointFinder from 'endpoint-finder'
+ 
+let getChainEndpoint = new endpointFinder('bitcanna')
+
+getChainEndpoint.getRpc().then(function(result) {
+  console.log(result)
+})
+```
+
+Return:
+`https://rpc.bitcanna.io`
 
 If you have any ideas for improvement, [open a discussion here](https://github.com/atmoner/endpoint-finder/discussions/new?category=ideas)
 
