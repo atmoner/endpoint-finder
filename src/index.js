@@ -8,7 +8,13 @@ let endpointFinder = class {
     this.finalLcd = ''
     this.finalRpc = ''
   }  
-  
+  async listChains() {
+    let allChains = []
+    chains.forEach(function(item) {
+      allChains.push(item.chain_name)
+    })
+    return allChains
+  }    
   async getLcd() {
     let finder = chains.find(
       ({chain_name}) => chain_name === this.chainToFind

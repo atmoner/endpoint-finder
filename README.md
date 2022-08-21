@@ -27,13 +27,27 @@ npm i endpoint-finder
 
 ## Usage:
 
-Get LCD:
+List all chains supported:
+
+``` js
+import endpointFinder from 'endpoint-finder'
+
+let initChains = new endpointFinder()
+
+// List all chains supported
+initChains.listChains().then(function(result) {
+  console.log(result)
+})
+```
+
+Get last valid LCD:
 
 ``` js
 import endpointFinder from 'endpoint-finder'
  
 let getChainEndpoint = new endpointFinder('bitcanna')
 
+// Get last valid LCD 
 getChainEndpoint.getLcd().then(function(result) {
   console.log(result)
 })
@@ -42,13 +56,14 @@ getChainEndpoint.getLcd().then(function(result) {
 Return:
 `https://lcd.bitcanna.io`
 
-Get RPC:
+Get last valid RPC:
 
 ``` js
 import endpointFinder from 'endpoint-finder'
  
 let getChainEndpoint = new endpointFinder('bitcanna')
 
+// Get last valid RPC 
 getChainEndpoint.getRpc().then(function(result) {
   console.log(result)
 })
