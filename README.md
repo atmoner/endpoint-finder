@@ -4,7 +4,8 @@
 
 
 ![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/jest.yml/badge.svg)
-    
+![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/codacy.yml/badge.svg)
+
 </div>
 
 ## Table of Contents
