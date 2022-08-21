@@ -1,6 +1,6 @@
 {
-  "name": "@atmoner/endpoint-finder",
-  "version": "1.0.2",
+  "name": "endpoint-finder",
+  "version": "1.0.6",
   "description": "",
   "main": "src/index.js",
   "type": "module",
@@ -23,6 +23,6 @@
     "node-fetch": "^2.6.7"
   },
   "publishConfig": {
-    "@atmoner:registry": "https://npm.pkg.github.com"
+    "atmoner:registry": "https://registry.npmjs.org"
   }
 }
