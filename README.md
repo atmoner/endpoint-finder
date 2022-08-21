@@ -40,5 +40,5 @@ lcd.getLcd().then(function(result) {
 Return:
 `https://lcd.bitcanna.io`
 
-If you have any ideas for improvement, open a discussion here
+If you have any ideas for improvement, [open a discussion here](https://github.com/atmoner/endpoint-finder/discussions/new?category=ideas)
 
