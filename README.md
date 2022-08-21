@@ -28,11 +28,11 @@ npm i endpoint-finder
 ## Usage:
 
 ``` js
-import lcdFinder from 'endpoint-finder'
+import endpointFinder from './src/index.js'
  
-let lcd = new lcdFinder('bitcanna')
+let getChainEndpoint = new endpointFinder('bitcanna')
 
-lcd.getLcd().then(function(result) {
+getChainEndpoint.getLcd().then(function(result) {
   console.log(result)
 })
 ```
