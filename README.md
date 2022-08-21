@@ -26,11 +26,6 @@ From npm
 npm i endpoint-finder
 ```
 
-From github
-```
-npm install @atmoner/endpoint-finder
-```
-
 ## Usage:
 
 ``` js
