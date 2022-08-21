@@ -21,7 +21,6 @@ The return will necessarily be an endpoint in http 200 status!
 
 ## Install:
 
-From npm
 ```
 npm i endpoint-finder
 ```
