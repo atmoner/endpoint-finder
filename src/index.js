@@ -5,8 +5,8 @@ let endpointFinder = class {
 
   constructor(chainToFind) {
     this.chainToFind = chainToFind
-    this.finalLcd = ''
-    this.finalRpc = ''
+    this.finalLcd
+    this.finalRpc
   }  
   async listChains() {
     let allChains = []
@@ -57,4 +57,3 @@ let endpointFinder = class {
   }   
 }
 export default endpointFinder
- 

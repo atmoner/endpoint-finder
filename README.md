@@ -2,9 +2,9 @@
 
 <img width="300" alt="cosmos" src="https://user-images.githubusercontent.com/1071490/185792789-ed005cb5-bc78-481f-8993-07b647ebbe13.png">
 
-![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/node.js.yml/badge.svg)
-![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/jest.yml/badge.svg)
-![example workflow](https://github.com/atmoner/endpoint-finder/actions/workflows/codacy.yml/badge.svg)
+[![Node.js CI](https://github.com/atmoner/endpoint-finder/actions/workflows/node.js.yml/badge.svg)](https://github.com/atmoner/endpoint-finder/actions/workflows/node.js.yml)
+[![Jest](https://github.com/atmoner/endpoint-finder/actions/workflows/jest.yml/badge.svg)](https://github.com/atmoner/endpoint-finder/actions/workflows/jest.yml)
+[![Codacy Security Scan](https://github.com/atmoner/endpoint-finder/actions/workflows/codacy.yml/badge.svg)](https://github.com/atmoner/endpoint-finder/actions/workflows/codacy.yml)
 
 </div>
 
@@ -12,6 +12,7 @@
 1. [How it works](#how-it-works)
 2. [Install](#install)
 3. [Usage](#usage)
+4. [Units test](#units-test)
 
 ## How it works
 
@@ -74,6 +75,20 @@ getChainEndpoint.getRpc().then(function(result) {
 
 Return:
 `https://rpc.bitcanna.io`
+
+
+## Units test
+
+You can find the tests in the file [test/index.spec.ts](https://github.com/atmoner/endpoint-finder/blob/main/test/index.spec.ts) 
+
+``` js
+npm run test
+```
+
+or
+``` js
+yarn test
+```
 
 If you have any ideas for improvement, [open a discussion here](https://github.com/atmoner/endpoint-finder/discussions/new?category=ideas)
 

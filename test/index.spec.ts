@@ -21,5 +21,17 @@ describe('Get endpoint', () => {
     getChainEndpoint.getRpc().then(function(result) {
       expect(result).toContain('https://rpc.bitcanna.io')
     })
+  }) 
+  it('Get invalid LCD', () => {
+    let getChainEndpoint = new endpointFinder()    
+    getChainEndpoint.getLcd().then(function(result) {
+      expect(result).toBeUndefined()
+    })
   })  
+  it('Get invalid RPC', () => {
+    let getChainEndpoint = new endpointFinder()    
+    getChainEndpoint.getRpc().then(function(result) {
+      expect(result).toBeUndefined()
+    })
+  })   
 }) 
